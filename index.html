@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      box-sizing: border-box;
+      min-height: 100vh;
+      background-color: hsl(204, 43%, 93%);
+    }
+    :root{
+      --color-primary: hsl(179, 62%, 43%) ;
+      --color-primary-light: hsl(71, 73%, 54%);
+      --color-primary-light-grey:hsl(204, 43%, 93%);
+      --color-primary-dark: hsl(218, 22%, 35%);
+      --color-primary-darker: hsl(218, 22%, 67%);
+    }
+    .conteiner{
+      width: 700px;
+      height: 450px;
+      border-radius: 10px;
+      margin: 50px auto;
+    }
+    .content-top{
+      width: 100%;
+      height: 200px;
+      background-color: white;
+      border-radius: 10px 10px 0 0 ;
+    }
+    .text-top{
+      padding-top: 10px;
+      margin-left: 40px;
+    }
+    .header{
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    .sub-header{
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-primary-light);
+    }
+    .text{
+      width: 550px;
+      font-size: 1rem;
+      color: var(--color-primary-darker);
+    }
+    .content-bottom{
+      width: 100%;
+      height: 250px;
+      border-radius: 0 0 10px 10px ;
+      background-color: var(--color-primary);
+      margin-top: 0;
+      display: flex;
+    }
+  .right{
+    width: 400px;
+    height: 100%; 
+    position: relative;
+  }
+  .head{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary-light-grey);
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  } 
+  .cash{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-light-grey);
+    position: absolute;
+    top: 35px;
+    left: 40px;
+  }
+  span{
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--color-primary-light-grey);
+    opacity: .6;
+    position: absolute;
+    top: 80px;
+    left: 110px;
+  }
+  .day{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-primary-light-grey);
+    position: absolute;
+    top: 110px;
+    left: 40px;
+  }
+  button{
+    width: 250px;
+    height: 40px;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 5px;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-light-grey);
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    top: 170px;
+    left: 40px;
+  }
+  .left{
+    width: 400px;
+    height: 100%;
+    background-color: #4abebd;
+    border-radius: 0 0 10px 0;
+    position: relative;
+  }
+  .headerr{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary-light-grey);
+    position: absolute;
+    top: 10px;
+    left: 40px;
+  }
+  .text-2{
+    width: 180px;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--color-primary-light-grey);
+    position: absolute;
+    top: 45px;
+    list-style: none;
+  }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <article >
+        <div class="conteiner">
+            <div class="content-top">
+                <div class="text-top">
+                <p class="header">Join our community</p>
+                <p class="sub-header">30-day, hassle-free money back guarantee</p>
+                <p class="text">
+                  Gain access to our full library of tutorials along with expert code reviews. 
+                  Perfect for any developers who are serious about honing their skills.
+                </p>
+               </div>
+            </div>
+
+        <div class="content-bottom">
+                <div class="right">
+                  <p class="head">Monthly Subscription</p>
+                  <p class="cash">$29</p>
+                  <span>per month</span>
+                  <p class="day">Full access for less than $1 a day</p>
+                  <button>Sign Up</button>
+                </div>
+                <div class="left">
+                  <p class="headerr">Why Us</p>
+                  <ul class="text-2">
+                    <li>Tutorials by industry experts</li>
+                    <li> Peer & expert code review</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our GitHub repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+                  </ul>
+                </div> 
+         </div>                
+        </div> 
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mete Han TOPER</a>.
+    </p>
+  </footer>
+</body>
+</html>
